@@ -1,0 +1,90 @@
+:root {
+    --mainbg: rgb(59, 27, 80);
+    --mainborder: #c31e3b;
+}
+
+/* video started */
+.vidsection{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    max-height: 30vh; min-height: 30vh;
+    max-width: 99vw; min-width: 99vw;
+    border-radius: 10px;
+}
+.vidsection video{
+    width: 99vw;
+    height: 30vh;
+    position: absolute;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.vidtitle{
+    width: 99vw;
+    height: 27vh;
+    background-color: black;
+    font-size: 100px;
+    color: #fff;
+    mix-blend-mode: multiply;
+    text-align: center;
+    z-index: 99;
+    border-radius: 10px;
+}
+
+/* video ended */
+
+
+body {
+    height: 100vh;
+}
+p{
+    display: inline;
+}
+hr {
+    border-color: var(--mainborder);
+}
+
+
+main div input ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 0.1;
+}
+
+a:hover {
+    font-weight: bolder;
+    transform: scale(1.18);
+    background-color: rgb(75, 68, 68);
+}
+
+/* animation for progress bar */
+@keyframes progressbar{
+    0% { 
+        width: 0vh;
+        background-color: rgb(117, 88, 88);
+    }
+    30%{
+        width: 50vh;
+        background-color: rgb(228, 214, 214);
+    }
+    60%{
+        width: 70vh; background-color: rgb(177, 37, 72);
+    }
+    80%{
+        width: 100vh; background-color: rgb(47, 179, 47);
+    }
+    /* automatically gets set to var(--main-bg) at 100% */
+}
+
+h3:hover{
+    color: var(--mainborder);
+    transform: scaleY(1.3);
+    transition: transform 1s ease-in;
+}
+
+iframe:hover{
+    transform: scale(1.2);
+    transition: transform 0.7s ease-in;
+}

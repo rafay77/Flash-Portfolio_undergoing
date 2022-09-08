@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Site</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="utils.css">
+</head>
+
+<body>
+    <header>
+        <!-- progress bar -->
+        <div class="progressbar"></div>
+        <!-- navbar here -->
+        <nav class="navbar">
+            <a href="#Home">Home</a>
+            <a href="#Contact">Contact</a>
+            <a href="#Services">Services</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="vidsection">
+            <video src="video.mp4" autoplay loop muted></video>
+            <h1 class="vidtitle">Rafay ZR</h1>            
+
+        </section>
+
+
+
+
+        <!-- chatbox -->
+        <div class="chatbox" id="chatbox">
+            <input type="text" placeholder="Enter your message here!" id="chatmsg">
+            <button id="submitbutton" onclick="submitreport()"> Submit </button>
+            <button id="hidebtn" onclick="hide()">Hide</button>
+        </div>
+        <script>
+            // for submit button
+            function submitreport() {
+                document.getElementById("submitbutton").addEventListener("click", function () {
+                    alert("Data Submitted!");
+                });
+            }
+            // for hide button
+            function hide() {
+                let hidebtn = document.getElementById('hidebtn');
+                let chatbox = document.getElementById('chatbox');
+                if (chatbox.style.display != 'none') {
+                    chatbox.style.display = 'none';
+                }
+            }
+        </script>
+
+
+        <!-- 2 divs showing differences/having paragraphs -->
+
+        <section class="comparisonsection">
+            <h3>
+                This is a comparison of Apple and Samsung
+            </h3>
+            <div class="applevssamsung">
+                <div class="apple">
+                    <!-- <article> recommended for this but here the content was less so <p> -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aliquid quibusdam consequuntur
+                        dicta
+                        laudantium incidunt dolor quo asperiores? At, hic, tempore, totam perferendis corrupti non iste
+                        odit
+                        vitae rem alias temporibus possimus officiis quia!</p>
+                </div>
+                <div class="gap"> C O M P A R I S O N </div>
+                <div class="samsung">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, porro aut asperiores dolores qui
+                        in
+                        sapiente laudantium, delectus nisi culpa ipsam corporis distinctio facere beatae. Eligendi
+                        adipisci
+                        aut temporibus debitis quo enim, recusandae perferendis quos doloribus cumque molestias, autem
+                        nesciunt illum consequatur expedita?</p>
+                </div>
+            </div>
+        </section>
+
+
+        <h3 class="videointro">
+            These are coding tutorial videos
+        </h3>
+        <section class="videomainbox">
+            <div class="box1">
+                <iframe src="https://www.youtube.com/embed/BsDoLVMnmZs"
+                    title="HTML Tutorial For Beginners In Hindi (With Notes) 🔥" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+            <div class="box2">
+                <iframe src="https://www.youtube.com/embed/Edsxf_NBFrw" title="CSS Tutorial In Hindi (With Notes) 🔥"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+            <div class="box3">
+                <iframe src="https://www.youtube.com/embed/hKB-YGF14SY" title="JavaScript Tutorial In Hindi"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+            <div class="box4">
+                <iframe src="https://www.youtube.com/embed/gwWKnnCMQ5c"
+                    title="Git & GitHub Tutorial For Beginners In Hindi - हिंदी में (2021)" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="4x4table">
+            <table class="tableclass">
+                <thead>
+                    <tr>
+                        <th> S. no </th>
+                        <th> Name </th>
+                        <th> Email </th>
+                        <th> Phone </th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>1</td>
+                    <td>Rafay</td>
+                    <td> <a href="#"> rafayzulfiqar77@gmail.com </a></td>
+                    <td>03305364464</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Mueed</td>
+                    <td> <a href="#"> mueedasif@gmail.com </a></td>
+                    <td>03383236217</td>
+                </tr>
+            </table>
+        </section>
+
+
+
+
+    </main>
+
+
+
+    <footer class="myfooter">
+        <div class="statement">
+           <p>  Rafay's Solutions &copy; Copyrights 2022 </p>
+        </div>
+
+        <div class="social-icons">
+            <img src="https://www.jefferson-project.org/wp-content/uploads/2021/05/facebook-png-icon-follow-us-facebook-1-300x300.png"
+                alt="fb icon">
+            <img src="https://cdn0.iconfinder.com/data/icons/social-media-circle-long-shadow/1024/instagram-512.png"
+                alt="insta icon">
+            <img src="https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/linkedin-256.png"
+                alt="linkedin icon">
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+1. To use var(), :root{--var_name}; then you can use var(var_name) in items
