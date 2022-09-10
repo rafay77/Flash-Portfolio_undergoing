@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Gurmukhi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--mainbg); 
+}
+main {
+    min-height: calc(100vh - 7vh - 7vh);
+    /* background-image: linear-gradient(to bottom right, yellow, var(--mainborder)); */
+}
+
+.progressbar {
+    /* background-color: red; */
+    background-color: var(--mainbg);
+    height: 1vh;
+    width: 100vw;
+    animation: progressbar 3s;
+    border-radius: 4px;
+    margin-bottom: 2px;
+}
+
+/* navbar starts */
+.navbar {
+    height: 7vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--mainborder);
+    border-radius: 10px;
+}
+body header nav a {
+    /* it shall inherit color of its container */
+    margin: 20px;
+    padding: 10px;
+    background-color: inherit;
+    text-decoration: none;
+    color: white;
+    font-family: 'Tiro Gurmukhi', serif;
+}
+/* navbar ends */
+
+
+/* comparison section starts */
+h3 {
+    color: var(--mainbg);
+    background-color: tan;
+    text-align: center;
+    margin: 2px;
+    border: 2px solid #c31e3b;
+    border-radius: 15px;
+}
+.comparisonsection{
+    margin-top: 1vh;
+}
+.applevssamsung {
+    margin-top: 1vh;
+    width: 98vw;
+    height: 23vh;
+    display: flex;
+    color: aqua;
+    flex-direction: row;
+    border: 2px solid var(--mainborder);
+    border-radius: 10px;
+    max-height: 23vh;
+}
+.apple {
+    width: 48vw;
+    height: inherit;
+    background-image: url(https://source.unsplash.com/690x150?apple,iphone,tech,dark);
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 2px solid tan;
+    filter: blur(0.5px);
+    box-sizing: border-box;
+    overflow: auto;
+}
+.gap {
+    height: 21.4vh;
+    width: 2vw;
+    background-color: tan;
+    border: 1vh double var(--mainbg);
+    border-radius: 5px;
+    text-align: center;
+    color: var(--mainbg);
+    overflow: auto;
+}
+.samsung {
+    width: 48vw;
+    height: inherit;
+    filter: blur(0.5px);
+    background-image: url(https://source.unsplash.com/690x150?samsung,dark);
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 2px solid tan;
+    box-sizing: border-box;
+    overflow: auto;
+}
+/* comparison section ends */
+
+
+/* video section starts */
+.videointro{
+    margin-top: 1vh;
+}
+.videointro h3 {
+    color: var(--mainbg);
+    min-height: 3vh;
+    text-align: center;
+    border: 2px solid var(--mainborder);
+    margin: 4px;
+}
+.videomainbox {
+    min-height: 3vh;
+    min-width: inherit;
+    background-color: var(--mainbg);
+    display: flex;
+    justify-content: center;
+    border: 3px solid var(--mainborder);
+    border-radius: 10px;
+}
+iframe{
+    border-radius: 5px;
+    margin-top: 1vh;
+}
+.box1 iframe {
+    min-height: inherit;
+    min-width: 24vw;
+}
+.box2 iframe {
+    min-height: inherit;
+    min-width: 24vw;
+}
+.box3 iframe {
+    min-height: inherit;
+    min-width: 24vw;
+}
+.box4 iframe {
+    min-height: inherit;
+    min-width: 24vw;
+}
+/* video section ends */
+
+
+/* chatbox starts */
+.chatbox {
+    margin: 10px;
+    border-radius: 11px;
+    min-height: 18vh;
+    min-width: 7vh;
+    background-color: tan;
+    color: var(--mainbg);
+    border: 2px solid aqua;
+    background-image: url(https://source.unsplash.com/219x118?purple,chat);
+    background-repeat: no-repeat;
+    /* float:right wasnt working, why? */
+    position: fixed;
+    right: 2vh;
+    top: 2vh;
+    z-index: 999;
+}
+#submitbutton{
+    background-color: var(--mainbg);
+    color: white;
+    border: 2px solid var(--mainborder); border-radius: 4px;
+    cursor: pointer;
+}
+#hidebtn{
+    background-color: var(--mainbg);
+    color: white;
+    border: 2px solid var(--mainborder); border-radius: 10px;
+    cursor: pointer;
+    padding: 1vh 1vw;
+    margin-top: 65px;  
+    display: block;
+}
+main div input {
+    color: white;
+    background-color: var(--mainbg);
+    border: 1.2px solid var(--mainborder);
+    border-radius: 3px;
+}
+/* chatbox ends */
+
+
+/* table starts */
+.tableclass{
+    min-width: inherit;
+    min-height: 15vh;
+    margin-top: 1vh;
+    color: aqua;
+
+    background-color: tan; /*same color as bg of th and tr so it will make table lines disappear*/
+    border: 2px solid var(--mainborder);
+    border-radius: 10px;
+}
+th{
+    width: 24.25vw;
+    color: var(--mainbg);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: larger;
+    background-color: tan;
+}
+td{
+    text-align: center;
+    color: var(--mainborder);
+    font-weight: bold;
+    font-size: larger;
+    background-color: tan;
+}
+td a{
+    color: inherit;
+    background-color: inherit;
+
+}
+/* table ends */
+
+
+
+
+
+
+
+
+
+
+
+/* footer is all good */
+.statement p, .statement, .social-icons, .social-icons img, footer{
+    background-color: black;
+}
+.statement{ margin-left: 5vw;}
+.social-icons {
+    margin-right: 5vw;
+    max-height: 4vh; 
+    justify-content: space-evenly;
+}
+.social-icons img {
+    max-height: inherit;
+    margin-inline: 1vh;
+}
+footer {
+    height: 7vh;
+    color: white;
+    border: 2px solid var(--mainborder);
+    border-radius: 10px;
+}
+.myfooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+}
