@@ -4,7 +4,8 @@
 * {
     margin: 0px;
     padding: 0px;
-    background-color: var(--mainbg);
+/*     background-color: var(--mainbg); */
+    background-color: red;
 }
 main {
     min-height: calc(100vh - 7vh - 7vh);
